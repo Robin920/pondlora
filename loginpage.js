@@ -4,7 +4,7 @@ function validate() {
 
     if(username=="admin" && password=="user")
     {
-        var myWindow = window.open("http://localhost/Pond%20LpWAN/homepage.php", "_self");
+        var myWindow = window.open("https://robin920.github.io/pondlora/homepage.php", "_self");
         //myWindow.document.write("<p>I replaced the current window.</p>");
         alert("success");
         //window.location.href="./homepage.php";
