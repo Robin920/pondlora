@@ -4,10 +4,11 @@ function validate() {
 
   if(username=="admin" && password=="user")
   {
+      window.open("https://robin920.github.io/pondlora/homepage.php");
       //var myWindow = window.open("./homepage.php", "_self");
       //myWindow.document.write("<p>I replaced the current window.</p>");
       alert("success");
-      window.location.href="homepage.php";
+     // window.location.href="homepage.php";
       //document.location.href="./homepage.php";
       //location.replace("./homepage.php");
       //open("http://localhost/Pond%20LpWAN/homepage.php");
