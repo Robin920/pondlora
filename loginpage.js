@@ -4,7 +4,7 @@ function validate() {
 
   if(username=="admin" && password=="user")
   {
-      window.location = 'https://robin920.github.io/pondlora/homepage.php';
+      //window.location = 'https://robin920.github.io/pondlora/homepage.php';
       //var myWindow = window.open("./homepage.php", "_self");
       //myWindow.document.write("<p>I replaced the current window.</p>");
       //alert("success");
@@ -12,11 +12,12 @@ function validate() {
       //document.location.href="./homepage.php";
       //location.replace("./homepage.php");
       //open("http://localhost/Pond%20LpWAN/homepage.php");
-      //return false;
+      return true;
   }
   else 
   {
       alert("Incorrect Credentials!! Try again");
+      return false;
   }
 }
 const loginText = document.querySelector(".title-text .login");
