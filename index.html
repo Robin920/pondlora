@@ -26,7 +26,7 @@
                <div class="slider-tab"></div>
             </div>
             <div class="form-inner">
-               <form action="homepage.php" class="login" >
+               <form action="homepage.php" class="login" method="post" name="form" onsubmit="return validated()">
                   <div class="field">
                      <input type="text" placeholder="Enter username" required id="username">
                   </div>
@@ -38,7 +38,7 @@
                   </div>
                   <div class="field btn">
                      <div class="btn-layer"></div>
-                     <input type="submit" value="Login" onclick="validate()">
+                     <button type="submit">Login</button>
                   </div>
                   <div class="signup-link">
                      Not a member? <a href="">Signup now</a>
