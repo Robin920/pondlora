@@ -26,24 +26,19 @@
                <div class="slider-tab"></div>
             </div>
             <div class="form-inner">
-               <form action="homepage.html" class="login" method="post" name="form" onsubmit="return validate()">
-                  <div class="field">
-                     <input type="text" placeholder="Enter username" required id="username">
-                  </div>
-                  <div class="field">
-                     <input type="password" placeholder="Password" required id="password">
-                  </div>
-                  <div class="pass-link">
-                     <a href="#">Forgot password?</a>
-                  </div>
-                  <div class="field btn">
-                     <div class="btn-layer"></div>
-                     <input type="submit" value="Login" >
-                  </div>
-                  <div class="signup-link">
-                     Not a member? <a href="">Signup now</a>
-                  </div>
-               </form>
+               <div class="container">
+		<h1 class="label">User Login</h1>
+		<form class="login_form" action="homepage.html" method="post" name="form" onsubmit="return validated()">
+			<div class="font">Email or Phone</div>
+			<input autocomplete="off" type="text" name="email">
+			<div id="email_error">Please fill up your Email or Phone</div>
+			<div class="font font2">Password</div>
+			<input type="password" name="password">
+			<div id="pass_error">Please fill up your Password</div>
+			<button type="submit">Login</button>
+		</form>
+	</div>	
+	<script src="valid.js"></script>
                <form action="#" class="signup">
                   <div class="field">
                      <input type="text" placeholder="Email Address" required>
